@@ -1,0 +1,38 @@
+/* Mobile Screen */
+@media screen and (max-width: 576px) {
+    .content,
+    .content-book {
+      flex-direction: column;
+    }
+    .col-1,
+    .col-2,
+    .unread, 
+    .read {
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+    .add-book {
+      width: 150px;
+      transform: translateX(-10%);
+      -webkit-transform: translateX(-10%);
+      -moz-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+      -o-transform: translateX(-10%);
+  }
+  }
+
+  /* Tablet Screen */
+  @media screen and (max-width: 768px) {
+    .content,
+    .content-book {
+      flex-direction: column;
+    }
+    .col-1,
+    .col-2,
+    .unread, 
+    .read {
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+  
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="rgba(233, 61, 107, .7)" />
+  
+  <title>Bookself Apps</title>
+  
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+  <nav class="top-bar"></nav>
+
+  <!--Content-->
+  <div class="content">
+    <div class="col-1">
+      <div class="user-information my-container">
+        <div class="user-img">
+          <img src="assets/img/avatar.png" alt="Avatar" />
+        </div>
+        <h1 class="user-name">Ramadhika Rizky</h1>
+        <p class="user-bio"> Amateur Coder</p>
+      </div>
+      <div class="my-container icons">
+        <div class="my-icon">
+           <div class="add-book" id="add-book">
+            <i class="fi-sr-add">Add List</i>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <p>Total Book</p>
+            <h4 id="jumlahBuku">20</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="my-container welcome">
+        <h1>Welcome to Bookself Apps</h1>
+        <p>Manage your book list without pain, try it now!</p>
+      </div>
+      <div class="content-book">
+        <div class="unread" id="unread">
+          <h4 class="">Unread</h4>
+        </div>
+        
+         <div class="read" id="read">
+          <h4>Finish Read</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Modal -->
+    <div id="modal">
+        <section class="my-container">
+            <h2>New Book</h2>
+            <form id="form">
+                <div class="input-group">
+                    <input type="text" id="title" placeholder="Judul Buku" class="input-form"
+                        maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="text" id="author" placeholder="Author" class="input-form"
+                        maxlength="60" pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="date" id="year" 
+                        class="input-form" min="1900" max="2026" />
+                </div>
+                <div class="button-group">
+                    <button type="reset" class="close" id="close">Close</button>
+                    <button type="submit" id="save">Save</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+
+
+  <script src="./storage.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
